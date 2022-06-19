@@ -7,9 +7,7 @@
       <div class="lg:w-2/12 md:w-3/12 bg-zinc-800 text-white w-full">
         <slot name="sidebar"></slot>
       </div>
-      <div
-        class="lg:w-10/12 md:w-9/12 w-full bg-zinc-900 text-white p-4 text-sm"
-      >
+      <div class="lg:w-10/12 md:w-9/12 w-full bg-zinc-900 text-white text-sm">
         <slot></slot>
       </div>
     </main>

@@ -1,6 +1,8 @@
 <template>
   <div class="relative">
-    <p v-html="colorTheme"></p>
+    <div class="p-4 cursor-text">
+      <p v-html="colorTheme"></p>
+    </div>
     <data-table />
   </div>
 </template>
@@ -16,13 +18,14 @@ export default {
   },
   data() {
     return {
-      observer: ["select", "*", "from", "where"],
+      observer: [],
     };
   },
   computed: {
     colorTheme() {
-      const str = "select * from table where name = 'girl';";
-      const breakDown = str.split(" ");
+      const { state } = this.$store;
+      if (!state.db.query) return;
+      const breakDown = state.db.query.split(" ");
       return breakDown
         .map((item) => {
           if (observer.includes(item)) {

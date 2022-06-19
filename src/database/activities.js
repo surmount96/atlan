@@ -1,8 +1,4 @@
-const activites = [
-    {
-        
-    }
+/* eslint-disable */
+export const activites = [
+  { name: "supervisor", description: "dsads", age: 34 },
 ];
-
-
-export default activites;

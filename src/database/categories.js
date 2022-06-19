@@ -1,8 +1,5 @@
-const categories = [
-    {
-        
-    }
+export const categories = [
+  {
+    name: "murder",
+  },
 ];
-
-
-export default categories;
