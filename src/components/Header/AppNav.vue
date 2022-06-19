@@ -16,12 +16,6 @@
         {{ table.query }}
       </option>
     </select>
-    <button>
-      <i
-        class="ri-flashlight-line ml-4 text-yellow-400"
-        title="Execute the statement under the keyboard cursor"
-      ></i>
-    </button>
   </div>
 </template>
 

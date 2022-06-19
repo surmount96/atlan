@@ -34,7 +34,7 @@
       </div>
     </div>
     <div v-else>
-      <p>No Data found.</p>
+      <p>No Data Available.</p>
     </div>
   </div>
 </template>
