@@ -5,7 +5,7 @@ const state = {
   query: "",
   tables: [],
   columns: [],
-  loading: false,
+  loading: true,
 };
 
 const getters = {};
@@ -30,16 +30,20 @@ const actions = {
     commit("UPDATE_COLUMNS", tables);
   },
   executeQueries({ commit }, payload) {
-    switch (payload) {
-      case tables[1].key:
-        commit("UPDATE_TABLE", activites);
-        break;
-      case tables[2].key:
-        commit("UPDATE_TABLE", categories);
-        break;
-      default:
-        commit("UPDATE_TABLE", []);
-    }
+    commit("LOADING", true);
+    setTimeout(() => {
+      switch (payload) {
+        case tables[1].key:
+          commit("UPDATE_TABLE", activites);
+          break;
+        case tables[2].key:
+          commit("UPDATE_TABLE", categories);
+          break;
+        default:
+          commit("UPDATE_TABLE", []);
+      }
+      commit("LOADING", false);
+    }, 2000);
   },
 };
 

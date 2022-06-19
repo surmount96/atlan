@@ -3,6 +3,7 @@
     <div class="p-4 cursor-text">
       <p v-html="colorTheme"></p>
     </div>
+    <app-loader />
     <data-table />
   </div>
 </template>
@@ -10,11 +11,13 @@
 <script>
 import DataTable from "../Data/DataTable.vue";
 import { observer } from "../../constant";
+import AppLoader from "@/components/Loading/AppLoader";
 
 export default {
   name: "HomePage",
   components: {
     DataTable,
+    AppLoader,
   },
   data() {
     return {
