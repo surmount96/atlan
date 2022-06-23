@@ -10,7 +10,7 @@
 import DefaultLayout from "@/components/Layouts/DefaultLayout";
 import SidebarNav from "@/components/Sidebar/SidebarNav.vue";
 import AppNav from "@/components/Header/AppNav.vue";
-import HomePage from "@/components/Home/HomePage.vue";
+import HomePage from "@/views/Home/HomePage.vue";
 
 export default {
   name: "App",

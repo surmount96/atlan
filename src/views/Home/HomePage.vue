@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import DataTable from "../Data/DataTable.vue";
+import DataTable from "@/components/Data/DataTable.vue";
 import { observer } from "../../constant";
 import AppLoader from "@/components/Loading/AppLoader";
 
