@@ -7,11 +7,9 @@
       :key="table.id"
       @click="runQuery(table)"
     >
-      <template v-if="!table.state">
-        <i class="ri-arrow-drop-right-line"></i>
-        <i class="ri-database-2-line mx-1"></i>
-        {{ table.key }}
-      </template>
+      <i class="ri-arrow-drop-right-line"></i>
+      <i class="ri-database-2-line mx-1"></i>
+      {{ table.key }}
     </div>
     <sidebar-footer />
   </div>
@@ -35,7 +33,9 @@ export default {
   },
   computed: {
     tables() {
-      return this.$store.state.db.columns;
+      return this.$store.state.db.columns.filter((table) => {
+        if (!table.state) return table;
+      });
     },
   },
   methods: {

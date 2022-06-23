@@ -1,5 +1,12 @@
 import { sql as tables } from "@/constant";
-import { activites, categories } from "@/database";
+import {
+  activites,
+  categories,
+  categoryName,
+  categoryNameDescription,
+  employees,
+  customers,
+} from "@/database";
 
 const state = {
   query: "",
@@ -38,6 +45,18 @@ const actions = {
           break;
         case tables[2].key:
           commit("UPDATE_TABLE", categories);
+          break;
+        case tables[3].key:
+          commit("UPDATE_TABLE", categoryName);
+          break;
+        case tables[4].key:
+          commit("UPDATE_TABLE", categoryNameDescription);
+          break;
+        case tables[5].key:
+          commit("UPDATE_TABLE", employees);
+          break;
+        case tables[6].key:
+          commit("UPDATE_TABLE", customers);
           break;
         default:
           commit("UPDATE_TABLE", []);

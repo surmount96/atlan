@@ -1,0 +1,28 @@
+export const customers = [
+  {
+    customerID: "ALFKI",
+    companyName: "Alfreds Futterkiste",
+    contactName: "Maria Anders",
+    contactTitle: "Sales Representative",
+    address: "Obere Str. 57",
+    city: "Berlin",
+    region: "NULL",
+    postalCode: "12209",
+    country: "Germany",
+    phone: "030-0074321",
+    fax: "030-0076545",
+  },
+  {
+    customerID: "ANATR",
+    companyName: "Ana Trujillo Emparedados y helados",
+    contactName: "Ana Trujillo",
+    contactTitle: "Owner",
+    address: "Avda. de la Constitución 2222",
+    city: "México D.F.",
+    region: "NULL",
+    postalCode: "05021",
+    country: "Mexico",
+    phone: "(5) 555-4729",
+    fax: "(5) 555-3745",
+  },
+];

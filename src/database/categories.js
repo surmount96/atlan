@@ -55,3 +55,14 @@ export const categories = [
       "0x151C2F00020000000D000E0014002100FFFFFFFF4269746D617020496D616765005061696E",
   },
 ];
+
+export const categoryName = categories.map((category) => {
+  return { categoryName: category.categoryName };
+});
+
+export const categoryNameDescription = categories.map((category) => {
+  return {
+    categoryName: category.categoryName,
+    description: category.description,
+  };
+});
