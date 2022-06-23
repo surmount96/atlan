@@ -1,6 +1,6 @@
 # atlan
 
-## Project setup
+## SQL Editor setup
 ```
 yarn install
 ```
@@ -20,5 +20,9 @@ yarn build
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Application Load time
+The application performance was rated 93% by lighthouse chrome extension.
+Inorder to optimize the application performance, the following list were put into consideration:
+- assets usage
+- purged unused styling
+- code structures
