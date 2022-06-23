@@ -8,4 +8,5 @@ import excel from "vue-excel-export";
 const app = createApp(App);
 app.use(store);
 app.use(excel);
+app.config.performance = true;
 app.mount("#app");

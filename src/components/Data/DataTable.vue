@@ -11,7 +11,7 @@
         </export-excel>
       </div>
       <div class="h-64 overflow-y-scroll">
-        <table class="table-auto w-full">
+        <table class="table-auto w-full" v-memo="[columns, tables]">
           <thead>
             <tr>
               <th
