@@ -1,4 +1,4 @@
-# atlan
+# Atlan SQL Editor
 
 ## SQL Editor setup
 ```
@@ -20,9 +20,12 @@ yarn build
 yarn lint
 ```
 
-### Application Load time
+## Application Load time
 The application performance was rated 93% by lighthouse chrome extension.
-Inorder to optimize the application performance, the following list were put into consideration:
-- assets usage
-- purged unused styling
-- code structures
+Which was calculated based on the following;
+- First Contentful Paint
+- Speed Index
+- Largest Contentful Paint
+- Time to Interactive
+- Total Blocking Time
+- Cumulative Layout shift
